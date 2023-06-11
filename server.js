@@ -13,8 +13,7 @@ if (process.env.NODE_ENV === "production") -+
 
 app.use('/api', apiRoutes);
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network', {
-  useFindAndModify: false,
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
